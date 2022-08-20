@@ -1,0 +1,23 @@
+code {
+  color: red;
+}
+
+h2,
+p {
+  border: 2px solid green;
+  padding: 5px;
+}
+
+h3,
+#paragraph-inline {
+  display: inline;
+  padding: 5px;
+}
+
+h3 {
+  border: 2px solid blue;
+}
+
+#paragraph-inline {
+  border: 2px solid red;
+}

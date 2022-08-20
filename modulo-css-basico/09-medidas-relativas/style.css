@@ -1,0 +1,28 @@
+html {
+  background-color: gray;
+}
+
+/*
+1em = 16px 
+O font-size padrão dos parágrafos é 16px
+*/
+
+body {
+  background-color: blueviolet;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.pai {
+  background-color: violet;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.filho {
+  background-color: aquamarine;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+

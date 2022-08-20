@@ -1,0 +1,18 @@
+#page-description {
+  color: crimson;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.savory-food-title {
+  background-color: cornflowerblue;
+}
+
+.sweet-food-title {
+  background-color: darkorchid;
+}
+
+.food-description {
+  padding: 5px;
+  border: solid 2px black;
+}
