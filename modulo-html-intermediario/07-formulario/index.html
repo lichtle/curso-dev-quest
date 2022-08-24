@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sétimo exercício do módulo de HTML intermediário do curso DevQuest."
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <h2>Formulário com GET</h2>
+    <form method="get" action="index.html">
+      <p>
+        O método GET passará os dados do formulário como parâmetros da URL, como
+        quando realizamos uma busca. Não utilize o GET para inputs com
+        informações sensíveis como senhas, pois elas aparecerão na URL.
+      </p>
+      <label for="busca">Faça uma busca:</label>
+      <input type="text" name="q" id="busca" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <h2>Formulário com POST</h2>
+    <form method="post" action="index.html">
+      <p>
+        O método POST passará os dados do formulário por baixo dos panos.
+        Utilizamos para tratar dados sensíveis como senhas e e-mails
+      </p>
+      <label for="senha">Digite sua senha:</label>
+      <input type="password" name="q" id="senha" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <h2>Exemplo de formulário do Facebook (sem CSS):</h2>
+    <form method="GET" action="index.html">
+      <input type="text" name="nome" id="nome" placeholder="Nome" required />
+      <input
+        type="text"
+        name="sobrenome"
+        id="sobrenome"
+        placeholder="Sobrenome"
+        required
+      />
+
+      <br />
+
+      <input
+        type="text"
+        name="celular-ou-email"
+        id="celular-ou-email"
+        placeholder="Celular ou e-mail"
+        required
+      />
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Nova senha"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label>Data de nascimento:</label>
+
+      <br />
+
+      <select name="dia" id="dia">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <select name="mes" id="mes">
+        <option value="jan">Jan</option>
+        <option value="fev">Fev</option>
+        <option value="mar">Mar</option>
+        <option value="abr">Abr</option>
+        <option value="mai">Mai</option>
+      </select>
+
+      <select name="dia" id="dia">
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label>Gênero:</label>
+
+      <br />
+
+      <input type="radio" name="genero" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+      <input type="radio" name="genero" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="genero" id="nao-binario" value="nao-binario" />
+      <label for="nao-binario">Não-binário</label>
+      <input
+        type="radio"
+        name="genero"
+        id="personalizar"
+        value="personalizar"
+      />
+      <label for="personalizar">Personalizar</label>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
