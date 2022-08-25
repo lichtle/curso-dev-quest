@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primeiro exercício do módulo de CSS intermediário do curso DevQuest."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Especificidade e Efeito Cascata</title>
+    <!--
+    <style>
+    .container-cascata {
+      background-color: purple;
+    }
+    </style>
+    -->
+
+    <!-- Se descomentarmos o código acima ele irá se sobrepor a qualquer regra CSS criada no arquivo CSS externo, pois a especificidade dita que o CSS interno é mais forte que o CSS externo, ignorando inclusive o efeito cascata -->
+  </head>
+  <body>
+    <h1>Efeito Cascata</h1>
+    <div class="container-cascata">
+      <h2>Container Cascata</h2>
+      <p>Inspecione o código para ver os comentários sobre especificidade!</p>
+    </div>
+
+    <div class="container-especificidade">
+      <h2>Container Especificidade</h2>
+      <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt id, dolorem necessitatibus nostrum eligendi eum aperiam, eaque labore explicabo quae. Libero praesentium rem delectus qui maxime dignissimos reprehenderit quia.</p>
+    </div>
+  </body>
+</html>

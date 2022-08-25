@@ -1,0 +1,72 @@
+.alinhado-esquerda {
+  text-align: left;
+}
+
+.alinhado-direita {
+  text-align: right;
+}
+
+.alinhado-centro {
+  text-align: center;
+}
+
+.alinhado-justificado {
+  text-align: justify;
+}
+
+.maiuscula {
+  text-transform: uppercase;
+}
+
+.minuscula {
+  text-transform: lowercase;
+}
+
+.capitalizado {
+  text-transform: capitalize;
+}
+
+.sublinhado {
+  text-decoration: underline;
+}
+
+.riscado {
+  text-decoration: line-through;
+}
+
+.sem-text-decoration {
+  text-decoration: none;
+}
+
+.espacamento-entre-linhas {
+  line-height: 40px;
+}
+
+.texto-com-sombra {
+  text-shadow: 2px 2px 3px purple; /* Os valores correspondem, respectivamente, a: espaçamento horizontal, espaçamento vertical, blur e cor da sombra*/
+}
+
+.fundo-alinhamento {
+  padding: 15px;
+  background-color: lightsalmon;
+}
+
+.fundo-transform {
+  padding: 15px;
+  background-color: lightgreen;
+}
+
+.fundo-decoration {
+  padding: 15px;
+  background-color: lightblue;
+}
+
+.fundo-espacamento {
+  padding: 15px;
+  background-color: lightgray;
+}
+
+.fundo-sombra {
+  padding: 15px;
+  background-color: violet;
+}
