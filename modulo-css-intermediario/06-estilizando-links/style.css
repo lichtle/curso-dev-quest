@@ -1,0 +1,20 @@
+a {
+  cursor: pointer;
+  color: darkgreen;
+  margin: 10px;
+  padding: 10px;
+}
+
+a:visited {
+  color: dodgerblue;
+}
+
+a:hover {
+  background-color: darkgreen;
+  color: lightgreen;
+}
+
+a:active {
+  color: chartreuse;
+}
+
