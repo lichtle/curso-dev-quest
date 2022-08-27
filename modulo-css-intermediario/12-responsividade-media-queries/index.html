@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Décimo segundo exercício do módulo de CSS intermediário do curso DevQuest."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Responsividade e media queries</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="logo">Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#onde-estamos">Onde estamos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="painel">
+        <div class="info">
+          <h1>Batman</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+            numquam ut ea harum alias necessitatibus voluptatum voluptatem
+            officiis, velit suscipit accusamus laborum et. Aut natus quaerat
+            libero quisquam ad aperiam.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+            fugit hic, libero sit odit animi itaque ducimus perspiciatis enim
+            ullam nulla tempore ab ad dolor nemo ut, quisquam eum quidem.
+          </p>
+        </div>
+        <div class="image">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="images/batman-pequena.jpg"
+              type="image/jpg"
+            />
+            <img src="images/batman.jpg" alt="Cartaz do Batman" />
+          </picture>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
