@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+      name="description"
+      content="Primeiro exercício do módulo de HTML avançado do curso DevQuest."
+    />
+  <title>Picture</title>
+</head>
+<body>
+  <h1>Picture</h1>
+  <p>Altere o tamanho da tela para visualizar diferentes tamanhos de imagem.</p>
+  <p>Ao monitorar a rede através do Dev Tools podemos perceber que as imagens menores (e mais leves) demoram menos tempo para carregar! Isso é importante para, que caso o usuário esteja no celular, o site não carregue uma imagem desnecessariamente maior e consuma mais banda.</p>
+  <picture>
+    <source media="(min-width: 768px)" srcset="images/desktop.jpg" type="image/jpg">
+    <source media="(min-width: 475px)" srcset="images/tablet.jpg" type="image/jpg">
+    <img src="images/celular.jpg" alt="Montanhas e lago">
+  </picture>
+</body>
+</html>
