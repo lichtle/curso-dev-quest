@@ -1,0 +1,20 @@
+p:first-child {
+  color: blueviolet;
+}
+
+p:last-child {
+  color: aquamarine;
+}
+
+ul li:nth-child(even) {
+  color: orangered;
+}
+
+ol li:not(.teste) {
+  color: green;
+}
+
+p:only-child {
+  color: deeppink;
+}
+

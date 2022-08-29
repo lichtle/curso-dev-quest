@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primeiro exercício do módulo de CSS avançado do curso DevQuest."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pseudo-classes</title>
+  </head>
+  <body>
+    <h1>Pseudo-classes</h1>
+
+    <h2>:first-child</h2>
+    <p>
+      Estiliza todos os primeiros filhos de determinado elemento. Como o seletor
+      "p", além da pseudo-classe "first-child" também tem a pseudo-classe
+      "last-child", tanto essa div quanto a div abaixo ficaram iguais.
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+        incidunt natus ipsa! Neque sunt aspernatur consequatur similique,
+        explicabo quisquam sed enim possimus. Quaerat culpa inventore nobis
+        veniam corporis quos cum!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+        repellat deleniti molestiae eaque. Ea laudantium est similique, pariatur
+        dolorum, consequuntur cupiditate deserunt, fugiat excepturi adipisci id
+        dignissimos sint explicabo nam!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem
+        quasi, commodi in veritatis perspiciatis consequuntur excepturi
+        blanditiis, similique possimus ducimus ratione sed cupiditate. Molestiae
+        tempora nobis officiis vitae voluptates?
+      </p>
+    </div>
+
+    <h2>:last-child</h2>
+    <p>
+      Estiliza todos os primeiros filhos de determinado elemento. Como o seletor
+      "p", além da pseudo-classe "first-child" também tem a pseudo-classe
+      "last-child", tanto essa div quanto a div abaixo ficaram iguais.
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+        incidunt natus ipsa! Neque sunt aspernatur consequatur similique,
+        explicabo quisquam sed enim possimus. Quaerat culpa inventore nobis
+        veniam corporis quos cum!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus autem
+        tempora unde magni nam architecto optio veniam distinctio laborum
+        mollitia veritatis dignissimos praesentium quaerat quia earum corrupti,
+        ad quam ipsum?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem
+        quasi, commodi in veritatis perspiciatis consequuntur excepturi
+        blanditiis, similique possimus ducimus ratione sed cupiditate. Molestiae
+        tempora nobis officiis vitae voluptates?
+      </p>
+    </div>
+
+    <h2>:nth-child</h2>
+    <p>
+      A pseudo-classe nth-child() pode assumir diferentes parâmetros. No exemplo
+      abaixo foi utilizado o parâmetro "even", que estiliza todos os elementos
+      pares filhos de outro elemento.
+    </p>
+    <div>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+
+    <h2>:nth-last-child</h2>
+    <p>
+      Diferente da :nth-child, esta pseudo-classe começa sua contagem do último
+      pro primeiro filho.
+    </p>
+
+    <h2>:not()</h2>
+    <p>
+      Estiliza todos os elementos (por exemplo, parágrafos ou divs) que não
+      tiverem determinada classe. No exemplo abaixo apenas o Item 2 possui a
+      classe "teste", que foi escolhida para não ser estilizada.
+    </p>
+    <div>
+      <ol>
+        <li>Item 1</li>
+        <li class="teste">Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ol>
+    </div>
+
+    <h2>:only-child</h2>
+    <div>
+      <p>Estiliza determinado elemento filho somente quando ele não tem elementos irmãos, como esse parágrafo solitário dentro de uma div :( neste caso somente ele, dentre todos os parágrafos da página, está sendo estilizado com a cor rosa.</p>
+    </div>
+    <div>
+      <p>O atual parágrafo e o parágrafo abaixo estão dentro de outra div, por isso não foram estilizados com a cor rosa (não são filhos únicos e sim, irmãos). Além disso, as cores roxa e azul estão sendo aplicadas pelas pseudo-classes :first-child e :last-child</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque repudiandae obcaecati molestias pariatur facilis. Fuga molestias dignissimos maiores et fugit eligendi repellat quasi nemo, voluptatibus itaque sequi quia cum voluptate.</p>
+    </div>
+  </body>
+</html>
