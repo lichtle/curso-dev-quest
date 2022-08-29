@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quinto exercício do módulo de HTML avançado do curso DevQuest."
+    />
+    <title>Vídeo</title>
+  </head>
+  <body>
+    <h1>Vídeo</h1>
+    <p>
+      Diferentes navegadores têm diferentes suporte para os tipos de vídeo
+      (.mp4, .ogg e .webm). O Safari, por exemplo, não suporta vídeos do tipo
+      .ogg. Para resolver este problema utilizamos a tag
+      <code>&lt;source&gt;</code>. Inspecione o código para ver os comentários!
+    </p>
+
+    <!-- <video src="videos/video.mp4" width="500px" controls poster="images/thumb.jpg"></video> -->
+
+    <video width="500px" controls poster="images/thumb.jpg">
+      <source src="videos/video.mp4" type="video/mp4" />
+      <source src="videos/video.ogg" type="video/ogg" />
+      <source src="videos/video.webm" type="video/webm" />
+      <p>
+        Seu navegador não tem suporte para vídeo. Recomenda-se baixar o
+        <a href="https://www.google.com/chrome/" target="_blank"
+          >Google Chrome</a
+        >.
+      </p>
+    </video>
+  </body>
+</html>
