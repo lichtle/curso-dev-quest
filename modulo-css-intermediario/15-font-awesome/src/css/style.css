@@ -1,0 +1,15 @@
+.fa-instagram {
+  color: hotpink;
+}
+
+.fa-instagram:hover {
+  color: orchid;
+}
+
+.fa-facebook {
+  color: darkblue;
+}
+
+.fa-facebook:hover {
+  color: lightskyblue;
+}
