@@ -1,0 +1,22 @@
+.first-letter::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+  color: palevioletred;
+}
+
+.first-line::first-line {
+  color: orangered;
+}
+
+li::marker {
+  color: blueviolet;
+  font-size: 30px;
+}
+
+h3::before {
+  content: url(images/9373104291661247011-24.png);
+}
+
+h4::after {
+  content: url(images/21362697191661247270-20.png);
+}
