@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Terceiro exercício do módulo de CSS avançado do curso DevQuest."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Seletores</title>
+  </head>
+  <body>
+    <h1>Seletores</h1>
+    <p>Existem vários tipos de seletor:</p>
+    <h2>Global (*)</h2>
+    <p>
+      Utilizado para estilizar todos os elementos da página. Geralmente é onde
+      são aplicadas as regras de reset da página, como resetar magins e
+      paddings. Neste caso ele está aplicando uma margem de 15px em todos os
+      elementos.
+    </p>
+
+    <h2>Elemento (ex.: p e h1)</h2>
+    <p>
+      O título principal "Seletores" foi estilizado utilizando um seletor de
+      elemento.
+    </p>
+
+    <h2>Classe (ex.: .classe1 e .classe2)</h2>
+    <p class="p-estilizado">
+      Este parágrafo está estilizado por conter a classe "p-estilizado".
+    </p>
+    <p>Este parágrafo está estilizado pois não tem a classe "p-estilizado".</p>
+
+    <h2>Id (ex.: #id1 e #id2)</h2>
+    <p>
+      A lista abaixo foi estilizada utilizando um seletor de id. O id não é
+      recomendado para estilização: seu uso é aconselhável para interações com o
+      JavaScript.
+    </p>
+    <ul id="menu">
+      <li>Sobre</li>
+      <li>Contato</li>
+      <li>Projetos</li>
+    </ul>
+
+    <h2>
+      Duas classes (ex.: .texto-grande.colorido e .texto-grande.com-background)
+    </h2>
+    <p>
+      Quando escrevemos as classes grudadas a estilização só irá ser aplicada em
+      elementos que possuam ambas as classes. Abaixo temos dois parágrafos e
+      ambos têm duas classes, sendo que uma das classes é comum aos dois (a
+      responsável por deixar os dois textos em negrito) e a outra é exclusiva de
+      cada um (já que temos uma classe aplicando um estilo em comum, esta outra
+      classe é chamada de "classe modificadora").
+    </p>
+    <p class="texto-negrito colorido">
+      Este parágrafo possui as classes "texto-negrito" e "colorido".
+    </p>
+    <p class="texto-negrito com-background">
+      Este parágrafo possui as classes "texto-negrito" e "com-background".
+    </p>
+
+    <h2>Seletores separados por vírgula (ex.: p, span e .classe, h1)</h2>
+    <p class="paragrafo">
+      Este é um parágrafo. Seletores separados por vírgula são uma forma de
+      modificar mais de um elemento ou mais de uma classe (ou uma mistura dos
+      dois) com o mesmo estilo.
+    </p>
+    <span
+      >Este é um span com os mesmos estilos do parágrafo acima. Neste exemplo
+      temos a alteração da fonte e da cor.</span
+    >
+
+    <h2>Seletores pai e filho (ex.: nav ul e .container-principal h1)</h2>
+    <p>
+      Estiliza um determinado elemento filho de determinado elemento pai.
+      Pode-se usar classes também. No exemplo abaixo estilizamos um parágrafo
+      filho de uma div de classe "div".
+    </p>
+    <div class="div">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, eos
+        facere! Quia, aliquam neque laudantium ipsa incidunt magni repudiandae
+        corrupti temporibus iste doloribus maiores quasi rem deleniti eaque
+        quaerat alias.
+      </p>
+    </div>
+
+    <h2>Seletor com &gt;</h2>
+    <p>Estiliza apenas os filhos diretos de determinado elemento.</p>
+
+    <h2>Seletor com + (ex.: div + h2 e h1 + p)</h2>
+    <p>
+      Estiliza apenas o primeiro elemento que aparece imediatamente após (e não
+      dentro) o elemento definido.
+    </p>
+
+    <h2>Seletor com atributo (ex.: a[target=_blank] e a[href="google.com"]</h2>
+    <p>
+      Estiliza apenas os elementos que possuam determinado atributo. No exemplo
+      abaixo, apenas o link com atributo target="_blank" está sendo estilizado.
+    </p>
+    <a href="https://www.google.com/" target="_blank">Link 1</a>
+    <a href="https://www.google.com/">Link 2</a>
+  </body>
+</html>

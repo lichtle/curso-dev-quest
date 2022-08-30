@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 15px;
+}
+
+h1 {
+  color: hotpink;
+}
+
+.p-estilizado {
+  font-size: 20px;
+  color: tomato;
+}
+
+#menu {
+  box-sizing: border-box;
+  background-color: cornflowerblue;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+.texto-negrito {
+  font-weight: bold;
+}
+
+.texto-negrito.colorido {
+  color: blueviolet;
+}
+
+.texto-negrito.com-background {
+  background-color: aquamarine;
+}
+
+.paragrafo,
+span {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: crimson;
+}
+
+.div p {
+  color: green;
+  font-weight: bold;
+}
+
+a[target=_blank] {
+  color: springgreen;
+  
+}
+
