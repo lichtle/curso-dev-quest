@@ -44,7 +44,7 @@ span {
   font-weight: bold;
 }
 
-a[target=_blank] {
+a[target="_blank"] {
   color: springgreen;
   
 }
