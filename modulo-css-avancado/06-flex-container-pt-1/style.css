@@ -1,0 +1,21 @@
+.container div {
+  background-color: cadetblue;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.container.direction {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.container.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container.flow {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
