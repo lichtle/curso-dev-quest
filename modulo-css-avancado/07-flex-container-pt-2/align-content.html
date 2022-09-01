@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
       name="description"
       content="Sétimo exercício do módulo de CSS avançado (Display Flex pt. 1) do curso DevQuest."
     />
-    <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/align-content.css">
-  <title>Flex Container: align-content</title>
-</head>
-<body>
-  <h1>Flex Container: align-content</h1>
-</body>
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/align-content.css" />
+    <title>Flex Container: align-content</title>
+  </head>
+  <body>
+    <h1>Flex Container: align-content</h1>
+    <p>
+      Define a distribuição de espaço entre os itens do eixo transversal (o qual
+      varia dependendo do <code>flex-direction</code>). Diferente do
+      <code>align-items</code>, o <code>align-content</code> só funciona em
+      conjunto com o <code>flex-wrap: wrap;</code> e, além disso, também é
+      necessário que os itens ocupem mais de uma linha para visualizar os
+      efeitos.
+    </p>
+
+    <section>
+      <h2>flex-start</h2>
+      <div class="container flex-start">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>flex-end</h2>
+      <div class="container flex-end">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>center</h2>
+      <div class="container center">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>stretch</h2>
+      <div class="container stretch">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>space-between</h2>
+      <div class="container space-between">
+        <div class="item item1">Lorem ipsum dolor</div>
+        <div class="item item2">Lorem ipsum</div>
+        <div class="item item3">3</div>
+        <div class="item item4">Lorem ipsum dolor</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>space-around</h2>
+      <div class="container space-around">
+        <div class="item item1">Lorem ipsum dolor</div>
+        <div class="item item2">Lorem ipsum</div>
+        <div class="item item3">3</div>
+        <div class="item item4">Lorem ipsum dolor</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>space-evenly</h2>
+      <div class="container space-evenly">
+        <div class="item item1">Lorem ipsum dolor</div>
+        <div class="item item2">Lorem ipsum</div>
+        <div class="item item3">3</div>
+        <div class="item item4">Lorem ipsum dolor</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+      </div>
+    </section>
+  </body>
 </html>
