@@ -16,14 +16,63 @@
     <h1>Flex Items: flex, order e align-self</h1>
 
     <section>
-      <h2>Flex</h2>
-      <div class="container">
-        <div class="item flex wrap">Lorem ipsum.</div>
-        <div class="item flex wrap">Lorem ipsum dolor.</div>
-        <div class="item flex wrap">Lorem ipsum dolor sit amet.</div>
-        <div class="item flex wrap">Lorem ipsum dolor sit amet.</div>
-        <div class="item flex wrap">Lorem ipsum dolor sit amet.</div>
-        <div class="item flex wrap">Lorem ipsum dolor sit amet.</div>
+      <h2>flex</h2>
+      <div class="container flex">
+        <div class="item flex-0">Lorem ipsum.</div>
+        <div class="item flex-1">Lorem ipsum dolor.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>order</h2>
+      <div class="container order">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>align-self</h2>
+
+      <h3>auto</h3>
+      <div class="container align-self">
+        <div class="item item1">1</div>
+        <div class="item item2">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+      </div>
+
+      <h3>flex-start</h3>
+      <div class="container align-self start">
+        <div class="item item1">1</div>
+        <div class="item item2">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="item item3">3</div>
+      </div>
+
+      <h3>flex-end</h3>
+      <div class="container align-self end">
+        <div class="item item1">1</div>
+        <div class="item item2">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="item item3">3</div>
+      </div>
+
+      <h3>center</h3>
+      <div class="container align-self center">
+        <div class="item item1">1</div>
+        <div class="item item2">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="item item3">3</div>
+      </div>
+
+      <h3>stretch</h3>
+      <div class="container align-self stretch">
+        <div class="item item1">1</div>
+        <div class="item item2">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="item item3">3</div>
       </div>
     </section>
   </body>

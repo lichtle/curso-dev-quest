@@ -1,4 +1,5 @@
-.flex-0 { /* shorthand para flex-grow, flex-shrink e flex-basis */
+.flex-0 {
+  /* shorthand para flex-grow, flex-shrink e flex-basis */
   flex: 0;
 }
 
@@ -6,7 +7,8 @@
   flex: 1;
 }
 
-.flex { /* sem utilizar a shorthand acima */
+.flex {
+  /* sem utilizar a shorthand acima */
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 100px;
@@ -14,4 +16,32 @@
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.order .item3 {
+  order: 1;
+}
+
+.order .item2 {
+  order: 2;
+}
+
+.align-self .item5 {
+  align-self: auto;
+}
+
+.align-self.start .item3 {
+  align-self: flex-start;
+}
+
+.align-self.end .item3 {
+  align-self: flex-end;
+}
+
+.align-self.center .item3 {
+  align-self: center;
+}
+
+.align-self.stretch .item3 {
+  align-self: stretch;
 }
