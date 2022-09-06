@@ -1,4 +1,8 @@
+/* Fonte */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* Variáveis globais */
 
 :root {
   --text-color: hsl(193, 38%, 86%);
@@ -7,28 +11,32 @@
   --background-color: hsl(218, 23%, 16%);
 }
 
+/* Configurações gerais (fonte, cor...) */
+
 body {
-  background-color: var(--background-color, black);
-  color: var(--text-color, grey);
+  background-color: var(--background-color, hsl(218, 23%, 16%));
+  color: var(--text-color, hsl(193, 38%, 86%));
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
 .title {
   font-size: 12px;
-  color: var(--advice-dice-color, lightgreen);
+  color: var(--advice-dice-color, hsl(150, 100%, 66%));
 }
 
 .advice {
   font-weight: 600;
 }
 
+/* Containers */
+
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .generator {
@@ -36,24 +44,42 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--advice-card-color, lightgrey);
-  padding: 40px;
   height: 350px;
   width: 500px;
+  padding: 40px;
   border-radius: 3%;
+  background-color: var(--advice-card-color, hsl(217, 19%, 24%));
+  position: relative;
+}
+
+/* Divisor e botão */
+
+.divider {
+  margin-bottom: 30px;
 }
 
 .btn-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
-  background-color: var(--advice-dice-color);
+  background-color: var(--advice-dice-color, hsl(150, 100%, 66%));
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+  bottom: 25px;
 }
+
+/* Responsivo */
 
 @media (max-width: 576px) {
   .generator {
-    width: 350px;
+    width: 340px;
+  }
+
+  .divider {
+    margin-bottom: 5px;
   }
 }

@@ -4,22 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/responsive.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Gerador de Conselhos</title>
   </head>
   <body>
     <div class="container">
       <main class="generator">
         <h1 class="title">CONSELHO #23</h1>
-        <p class="advice">"O conselho mais clichê: nunca desista dos seus sonhos. Alguns dias serão muito difíceis, as coisas darão errado, nos sentiremos incapazes... e isso é normal. Os erros são parte crucial do processo. Continue tentando de novo e de novo, uma hora dá certo!"</p>
-        <picture>
-          <source media="(min-width: 768px)" srcset="src/images/pattern-divider-desktop.svg" type="image/svg+xml">
-          <img src="src/images/pattern-divider-mobile.svg" alt="Divisor">
+        <p class="advice">
+          "O conselho mais clichê: nunca desista dos seus sonhos. Alguns dias
+          serão muito difíceis, as coisas darão errado, nos sentiremos
+          incapazes... e isso é normal. Os erros são parte crucial do processo.
+          Continue tentando de novo e de novo, uma hora dá certo!"
+        </p>
+        <picture class="divider">
+          <source
+            media="(min-width: 687px)"
+            srcset="src/images/pattern-divider-desktop.svg"
+            type="image/svg+xml"
+          />
+          <img src="src/images/pattern-divider-mobile.svg" alt="Divisor" />
         </picture>
-        <button class="btn-dice"><img src="src/images/icon-dice.svg" alt="Ícone do botão"></button>
       </main>
+      <button class="btn-dice">
+        <img class="dice" src="src/images/icon-dice.svg" alt="Ícone do botão" />
+      </button>
     </div>
   </body>
 </html>
