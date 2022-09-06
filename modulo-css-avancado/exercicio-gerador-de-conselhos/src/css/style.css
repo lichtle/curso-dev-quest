@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --text-color: hsl(193, 38%, 86%);
+  --advice-dice-color: hsl(150, 100%, 66%);
+  --advice-card-color: hsl(217, 19%, 24%);
+  --background-color: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--background-color, black);
+  color: var(--text-color, grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 12px;
+  color: var(--advice-dice-color, lightgreen);
+}
+
+.advice {
+  font-weight: 600;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--advice-card-color, lightgrey);
+  padding: 40px;
+  height: 350px;
+  width: 500px;
+  border-radius: 3%;
+}
+
+.btn-dice {
+  width: 48px;
+  height: 48px;
+  background-color: var(--advice-dice-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .generator {
+    width: 350px;
+  }
+}
