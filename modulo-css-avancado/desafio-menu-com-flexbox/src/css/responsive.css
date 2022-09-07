@@ -25,15 +25,14 @@
     width: 100vw;
   }
 
-  nav.navigation-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-  }
-
   a.relevant-list-item {
     width: 233px;
     height: 81px;
+  }
+
+  button.register-btn {
+    font-size: 18px;
+    width: 150px;
+    height: 55px;
   }
 }

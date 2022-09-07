@@ -44,15 +44,19 @@ body {
   align-items: center;
 }
 
-.nav-list li a:not(.relevant-list-item) {
+.nav-list li a:not(.relevant-list-item):not(.btn-link) {
   color: #000;
 }
 
 .relevant-list-item,
-.register-btn, .register-btn a {
+.btn-link {
+  color: #fff;
+}
+
+.relevant-list-item,
+.register-btn {
   background-color: var(--brand-color);
   height: 40px;
-  color: #fff;
 }
 
 .relevant-list-item {
@@ -66,8 +70,5 @@ body {
   border: none;
   width: 127px;
   border-radius: 10px;
-}
-
-.register-btn a {
   font-weight: 300;
 }
