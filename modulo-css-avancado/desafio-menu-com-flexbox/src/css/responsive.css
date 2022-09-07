@@ -1,0 +1,39 @@
+@media (max-width: 576px) {
+  h1.title,
+  ul.nav-list {
+    font-size: 40px;
+  }
+
+  div.logo-and-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 47px;
+  }
+
+  ul.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 540px;
+    width: 100vw;
+  }
+
+  nav.navigation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  a.relevant-list-item {
+    width: 233px;
+    height: 81px;
+  }
+}

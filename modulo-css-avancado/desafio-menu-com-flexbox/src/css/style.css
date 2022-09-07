@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap");
+
+:root {
+  --brand-color: #5bc241;
+  --default-font: "Public Sans", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  font-family: var(--default-font);
+  font-size: 15px;
+}
+
+.logo {
+  width: 45px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  width: 465px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-list li a:not(.relevant-list-item) {
+  color: #000;
+}
+
+.relevant-list-item,
+.register-btn, .register-btn a {
+  background-color: var(--brand-color);
+  height: 40px;
+  color: #fff;
+}
+
+.relevant-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+}
+
+.register-btn {
+  border: none;
+  width: 127px;
+  border-radius: 10px;
+}
+
+.register-btn a {
+  font-weight: 300;
+}
