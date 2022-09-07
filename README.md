@@ -4,6 +4,11 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 
 ![Banner DevQuest](https://user-images.githubusercontent.com/84854530/187265414-aaa3d1e6-7fcb-4247-923a-4ff9ea6b7eb7.jpg)
 
+## Projetos que desenvolvi no curso:
+
+### Módulo CSS3 Avançado pt. 2 | Flex
+:raccoon: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Projeto Card de Perfil</a><br>
+:wolf: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Projeto Gerador de Conselhos</a>
 
 ## Veja meu progresso! :purple_heart: [■■■■□□□□□□] 46%
 
