@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;700&display=swap");
+
+img {
+  width: 335px;
+  height: 430px;
+}
+
+.img-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 130px;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+  left: 25px;
+  bottom: 40px;
+}
+
+figcaption.art-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+figcaption .author {
+  font-weight: 300;
+  font-size: 17px;
+}
