@@ -11,10 +11,6 @@ body {
   font-size: 15px;
 }
 
-.logo {
-  width: 45px;
-}
-
 .title {
   font-size: 20px;
   font-weight: 800;
@@ -23,52 +19,41 @@ body {
 .logo-and-title {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
-.menu-container {
+.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 45px;
 }
 
-.navigation-container {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list {
+.menu-items {
   width: 465px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nav-list li a:not(.relevant-list-item):not(.btn-link) {
-  color: #000;
+.menu-items li a {
+  transition: 0.2s ease-in-out;
+  padding: 10px 5px;
 }
 
-.relevant-list-item,
-.btn-link {
+.menu-items li a:hover {
+  background-color: var(--brand-color);
   color: #fff;
 }
 
-.relevant-list-item,
 .register-btn {
+  padding: 10px 20px;
   background-color: var(--brand-color);
-  height: 40px;
-}
-
-.relevant-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 55px;
-}
-
-.register-btn {
   border: none;
-  width: 127px;
   border-radius: 10px;
+}
+
+.register-btn a {
+  color: #fff;
   font-weight: 300;
 }

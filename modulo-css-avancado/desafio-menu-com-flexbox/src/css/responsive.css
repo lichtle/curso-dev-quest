@@ -1,38 +1,28 @@
-@media (max-width: 576px) {
-  h1.title,
-  ul.nav-list {
+@media (max-width: 650px) {
+  .title,
+  .menu-items {
     font-size: 40px;
   }
 
-  div.logo-and-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  header.menu-container {
-    display: flex;
+  .header {
     flex-direction: column;
     gap: 100px;
-    margin: 47px;
   }
 
-  ul.nav-list {
-    display: flex;
+  .menu-items {
     flex-direction: column;
-    justify-content: space-between;
     height: 540px;
-    width: 100vw;
   }
 
-  a.relevant-list-item {
-    width: 233px;
-    height: 81px;
+  .menu-items li a:not(.register-btn a) {
+    padding: 15px 40px;
   }
 
-  button.register-btn {
+  .register-btn {
+    padding: 15px 20px;
+  }
+
+  .register-btn a {
     font-size: 18px;
-    width: 150px;
-    height: 55px;
   }
 }
