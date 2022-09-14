@@ -1,0 +1,30 @@
+.container div,
+.container-2 div {
+  border: 1px solid black;
+  color: white;
+  font-size: 20px;
+}
+
+.container div {
+  background-color: blueviolet;
+}
+
+.container-2 div {
+  background-color: limegreen;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 120px auto 120px;
+  /* Cria três colunas, sendo a primeira e a última de 120px e a do meio se encaixa automaticamente no restante do espaço entre a primeira e a segunda (auto) */
+  grid-template-rows: repeat(2, 100px);
+  /* A função repeat repete n vezes (primeiro valor) o tamanho x (segundo valor). Nesse caso teremos as 2 primeiras linhas com 100px */
+
+  /* grid-template: 120px 70px / 120px auto 120px: shorthand que une as propriedades grid-template-columns e grid-template-rows. Os valores antes da barra são referentes às linhas e os valores depois da barra são referentes às colunas */
+}
+
+.container-2 {
+  display: grid;
+  grid-template: repeat(2, 100px) / repeat(3, auto);
+  grid-gap: 10px 0;
+} /* 2 primeiras linhas com 100px e 3 colunas com larguras iguais usando o valor auto. Linhas com 10px de distância e colunas com 0px de distância */
