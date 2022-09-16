@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F7;
+  ;
+  padding: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video-info .video-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.video-info .video-views {
+  font-size: 14px;
+}
+
+.video-info .video-description {
+  max-width: 540px;
+}
+
+.thumbnail-title {
+  font-size: 14px;
+}
