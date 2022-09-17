@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Grid definitons */
+
+.container {
+  max-width: 900px;
+  display: grid;
+  grid-template-areas: "video ad" "video suggestions";
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 55px 1fr;
+  gap: 20px;
+  padding: 35px;
+}
+
+.video-container {
+  grid-area: video;
+}
+
+.ad {
+  grid-area: ad;
+}
+
+.suggestions {
+  grid-area: suggestions;
+}
+
+/* Video container definitions */
+
+.video-container img {
+  margin-bottom: 10px;
+}
+
+.video-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.video-views {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Suggestions container definitions */
+
+.suggestions .thumbnail-and-infos {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.suggested-video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.suggested-video-title {
+  font-size: 14px;
+}
+
+.suggested-video-info p {
+  font-size: 11px;
+}
