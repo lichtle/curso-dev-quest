@@ -10,7 +10,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 :raccoon: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Projeto Card de Perfil</a><br>
 :wolf: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Projeto Gerador de Conselhos</a>
 
-## Veja meu progresso! :purple_heart: [■■■■□□□□□□] 46%
+## Veja meu progresso! :purple_heart: [■■■■□□□□□] 50%
 
 - [X] Usando o Terminal
 - [X] Conhecendo o VS Code
@@ -23,7 +23,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 - [X] HTML5 Avançado
 - [X] CSS3 Avançado pt. 1
 - [X] CSS3 Avançado pt. 2 | Flex
-- [ ] CSS3 Avançado pt. 3 | Grid
+- [X] CSS3 Avançado pt. 3 | Grid
 - [ ] CSS3 | Módulo de Reforço 
 - [ ] Projeto Landing Page com Flex e Grid
 - [ ] JavaScript Básico
