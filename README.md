@@ -7,10 +7,14 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 ## Projetos que desenvolvi no curso:
 
 ### Módulo CSS3 Avançado pt. 2 | Flex
-:raccoon: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Projeto Card de Perfil</a><br>
-:wolf: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Projeto Gerador de Conselhos</a>
+:raccoon: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Card de Perfil</a><br>
+:wolf: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Gerador de Conselhos</a>
 
-## Veja meu progresso! :purple_heart: [■■■■□□□□□] 50%
+### Módulo CSS3 Avançado pt. 3 | Grid
+:zebra: <a href="https://github.com/lichtle/curso-dev-quest/tree/main/projeto-landing-page-com-grid" target="_blank">Landing Page com Flex e Grid</a>
+
+
+## Veja meu progresso! :purple_heart: [■■■■□□□□□] 54%
 
 - [X] Usando o Terminal
 - [X] Conhecendo o VS Code
@@ -24,8 +28,8 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 - [X] CSS3 Avançado pt. 1
 - [X] CSS3 Avançado pt. 2 | Flex
 - [X] CSS3 Avançado pt. 3 | Grid
-- [ ] CSS3 | Módulo de Reforço 
-- [ ] Projeto Landing Page com Flex e Grid
+- [X] CSS3 | Módulo de Reforço 
+- [X] <a href="https://github.com/lichtle/curso-dev-quest/tree/main/projeto-landing-page-com-grid" target="_blank">Projeto Landing Page com Flex e Grid</a>
 - [ ] JavaScript Básico
 - [ ] JavaScript Intermediário
 - [ ] JavaScript Avançado
