@@ -18,4 +18,11 @@ var i = 1;
 
 do {
   console.log("i vale " + i + " e é menor que 5");
+  i++;
 } while (i < 5);
+
+for (i = 1; i < 5; i++) {
+  console.log("i vale " + i + " e é menor que 5");
+}
+
+
