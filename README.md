@@ -14,7 +14,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 :zebra: <a href="https://github.com/lichtle/curso-dev-quest/tree/main/projeto-landing-page-com-grid" target="_blank">Landing Page com Flex e Grid</a>
 
 
-## Veja meu progresso! :purple_heart: [■■■■□□□□□] 54%
+## Veja meu progresso! :purple_heart: [■■■■■□□□□] 62%
 
 - [X] Usando o Terminal
 - [X] Conhecendo o VS Code
@@ -30,7 +30,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 - [X] CSS3 Avançado pt. 3 | Grid
 - [X] CSS3 | Módulo de Reforço 
 - [X] <a href="https://github.com/lichtle/curso-dev-quest/tree/main/projeto-landing-page-com-grid" target="_blank">Projeto Landing Page com Flex e Grid</a>
-- [ ] JavaScript Básico
+- [X] JavaScript Básico
 - [ ] JavaScript Intermediário
 - [ ] JavaScript Avançado
 - [ ] Testes Automatizados de Software com Jest
