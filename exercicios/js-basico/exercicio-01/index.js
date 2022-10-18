@@ -1,14 +1,5 @@
-/* PRIMEIRA TENTATIVA
+let nomeUsuario = prompt("Por favor, informe seu nome:");
 
-let usuario = prompt("Por favor, informe seu nome:");
-alert("Bem-vinde, " + usuario + "!");
-
-*/
-
-const nomeUsuario = prompt("Por favor, informe seu nome:");
-
-function alertBoasVindas(nomeUsuario = "terráqueo") {
-  alert("Bem-vinde, " + nomeUsuario + "!");
-}
-
-alertBoasVindas();
+nomeUsuario != null && nomeUsuario != ""
+  ? alert("Bem-vinde, " + nomeUsuario + "!")
+  : alert("Bem-vinde, terráqueo!");
