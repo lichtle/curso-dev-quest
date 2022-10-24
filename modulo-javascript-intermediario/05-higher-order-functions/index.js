@@ -6,8 +6,8 @@ const calcularAnoDeNascimento = function (
   imprimirAnoDeNascimento
 ) {
   const mesAtual = 10;
-  let anoDeNascimento = 2022 - idade; // Ano de nascimento = ano atual - idade da pessoa
-  if (mesDeNascimento > mesAtual) anoDeNascimento--; // Se o mês de nascimento for maior que o mês atual, então é necessário subtrair 1 do ano de nascimento, pois a pessoa ainda não fez aniversário
+  let anoDeNascimento = 2022 - idade; 
+  if (mesDeNascimento > mesAtual) anoDeNascimento--; 
   imprimirAnoDeNascimento(anoDeNascimento);
 };
 
