@@ -15,6 +15,6 @@ console.log(avaliacoes.length); // Imprime a quantidade de itens que tem dentro 
 
 // Um mesmo array pode conter diferentes tipos de dado:
 
-let descricaoFilme = ["Vingadores", 9, true];
+let descricaoFilme = ["Vingadores", 9, true]; // Exemplo: nome do filme, nota e se está em cartaz ou não
 
 console.log(descricaoFilme);
