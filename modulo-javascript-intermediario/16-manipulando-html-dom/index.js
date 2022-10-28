@@ -13,7 +13,7 @@ function adicionarComentario() {
 
   let textoDigitado =
     inputComentario[0]
-      .value; /* 2) Como a pesquisa anterior resultou em uma NodeList (array), precisamos indicar o índice do item cujo valor estamos buscando. Nesse caso o índice é 0, pois a pesquisa resultou em um array com apenas um item. Pegamos então o valor digitado nesse elemento, que é um input, através do método .value
+      .value; /* 2) A pesquisa anterior resultou em uma NodeList (array) com apenas um item, mas poderiam haver mais, e é por isso que o próximo passo consiste em indicar o índice do item cujo valor (comentário) estamos querendo acessar. Nesse caso o índice é 0, pois a pesquisa resultou em um array com apenas um item. Então pegamos o valor inserido (texto digitado) nesse elemento através do método .value
 
   console.log(textoDigitado);
 
