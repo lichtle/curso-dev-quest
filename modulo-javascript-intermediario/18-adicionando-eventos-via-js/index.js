@@ -1,6 +1,12 @@
-// let alerta = function mostrarAlerta() {
-//   alert("Este é um alerta!");
-// };
+/* Eventos adicionados através do JS:
+
+let alerta = function mostrarAlerta() {
+  alert("Este é um alerta!");
+}; 
+
+*/
+
+// Eventos adicionados através do JS:
 
 let selectDeEstado = document.querySelector("select[name='estado']");
 
