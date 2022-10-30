@@ -1,0 +1,13 @@
+#quadradoQueMudaDeCor,
+#quadrado {
+  width: 100px;
+  height: 100px;
+}
+
+#quadradoQueMudaDeCor {
+  background-color: blue;
+}
+
+#quadrado {
+  background-color: red;
+}
