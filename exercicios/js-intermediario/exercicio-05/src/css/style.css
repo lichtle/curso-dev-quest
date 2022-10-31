@@ -18,8 +18,9 @@ body {
   display: flex;
   align-items: center;
   background-size: cover;
+  width: 100%;
   height: 100vh;
-  position: relative;
+  position: absolute;
 }
 
 .container-imagem-1 {
@@ -47,12 +48,12 @@ body {
   height: 44rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  position: absolute;
-  left: 16rem;
   padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
+  left: 15rem;
 }
 
 .img-info a {
@@ -82,15 +83,14 @@ body {
 
 .seta-direita,
 .seta-esquerda {
+  position: absolute;
   width: 4rem;
 }
 
 .seta-esquerda {
-  position: absolute;
   left: 5rem;
 }
 
 .seta-direita {
-  position: absolute;
   right: 5rem;
 }
