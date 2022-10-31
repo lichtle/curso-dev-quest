@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-principal {
+  position: relative;
+}
+
+.container-imagem-1,
+.container-imagem-2,
+.container-imagem-3,
+.container-imagem-4 {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.container-imagem-1 {
+  background: url("../images/imagem-1.png") no-repeat;
+  opacity: 1;
+}
+
+.container-imagem-2 {
+  background: url("../images/imagem-2.png") no-repeat;
+  opacity: 0;
+}
+
+.container-imagem-3 {
+  background: url("../images/imagem-3.png") no-repeat;
+  opacity: 0;
+}
+
+.container-imagem-4 {
+  background: url("../images/imagem-4.png") no-repeat;
+  opacity: 0;
+}
+
+.img-info {
+  width: 38rem;
+  height: 44rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 16rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-info a {
+  font-weight: 700;
+}
+
+.container-imagem-1 .img-info a {
+  color: #c50000;
+}
+
+.container-imagem-2 .img-info a {
+  color: #d9dd10;
+}
+
+.container-imagem-3 .img-info a {
+  color: #a63a17;
+}
+
+.container-imagem-4 .img-info a {
+  color: #10acdd;
+}
+
+.img-info h1 {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+.seta-direita,
+.seta-esquerda {
+  width: 4rem;
+}
+
+.seta-esquerda {
+  position: absolute;
+  left: 5rem;
+}
+
+.seta-direita {
+  position: absolute;
+  right: 5rem;
+}
