@@ -25,22 +25,18 @@ body {
 
 .container-imagem-1 {
   background: url("../images/imagem-1.png") no-repeat;
-  opacity: 1;
 }
 
 .container-imagem-2 {
   background: url("../images/imagem-2.png") no-repeat;
-  opacity: 0;
 }
 
 .container-imagem-3 {
   background: url("../images/imagem-3.png") no-repeat;
-  opacity: 0;
 }
 
 .container-imagem-4 {
   background: url("../images/imagem-4.png") no-repeat;
-  opacity: 0;
 }
 
 .img-info {
@@ -85,6 +81,7 @@ body {
 .seta-esquerda {
   position: absolute;
   width: 4rem;
+  cursor: pointer;
 }
 
 .seta-esquerda {
@@ -93,4 +90,12 @@ body {
 
 .seta-direita {
   right: 5rem;
+}
+
+.opacidade-seta {
+  opacity: 0.6;
+}
+
+.opacidade-imagem {
+  opacity: 1;
 }
