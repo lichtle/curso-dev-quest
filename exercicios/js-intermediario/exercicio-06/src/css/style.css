@@ -1,0 +1,9 @@
+.pergunta {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.seta-fechada {
+  height: 0.8rem;
+}
