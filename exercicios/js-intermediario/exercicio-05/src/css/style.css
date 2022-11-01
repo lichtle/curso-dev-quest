@@ -1,105 +1,107 @@
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
 }
 
-.container-principal {
+.slider-imagens {
+  display: flex;
+  align-items: center;
+  height: 100vh;
   position: relative;
 }
 
-.container-imagem-1,
-.container-imagem-2,
-.container-imagem-3,
-.container-imagem-4 {
+.slider-imagens .slide {
+  position: absolute;
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
+  background-position: center;
+  width: 100vw;
+  height: 100%; /* Sem definir o width e o height a bg image só aparece em volta do conteúdo (descrição da imagem) */
+  transition: 0.5s ease-in-out;
+  opacity: 0; /* Esconde todos os slides e só mostra o que tiver a classe "mostrar" */
 }
 
-.container-imagem-1 {
-  background: url("../images/imagem-1.png") no-repeat;
+.slider-imagens .slide.mostrar {
+  opacity: 1; /* O elemento de classe "slide" e classe "mostrar" aparece, enquanto os outros permanecem escondidos */
 }
 
-.container-imagem-2 {
-  background: url("../images/imagem-2.png") no-repeat;
+.slide-rosa {
+  background-image: url("../images/imagem-1.png");
 }
 
-.container-imagem-3 {
-  background: url("../images/imagem-3.png") no-repeat;
+.slide-amarelo {
+  background-image: url("../images/imagem-2.png");
 }
 
-.container-imagem-4 {
-  background: url("../images/imagem-4.png") no-repeat;
+.slide-roxo {
+  background-image: url("../images/imagem-3.png");
 }
 
-.img-info {
+.slide-azul {
+  background-image: url("../images/imagem-4.png");
+}
+
+.descricao {
   width: 38rem;
   height: 44rem;
+  padding: 5rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  padding: 5rem;
+  margin-left: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  left: 15rem;
 }
 
-.img-info a {
-  font-weight: 700;
-}
-
-.container-imagem-1 .img-info a {
-  color: #c50000;
-}
-
-.container-imagem-2 .img-info a {
-  color: #d9dd10;
-}
-
-.container-imagem-3 .img-info a {
-  color: #a63a17;
-}
-
-.container-imagem-4 .img-info a {
-  color: #10acdd;
-}
-
-.img-info h1 {
+.descricao h1 {
   font-weight: 400;
   font-size: 2.8rem;
 }
 
-.seta-direita,
-.seta-esquerda {
-  position: absolute;
-  width: 4rem;
-  cursor: pointer;
+.link {
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
-.seta-esquerda {
+.link.rosa {
+  color: #c50000;
+}
+
+.link.amarelo {
+  color: #d9dd10;
+}
+
+.link.roxo {
+  color: #a63a17;
+}
+
+.link.azul {
+  color: #10acdd;
+}
+
+.seta-voltar,
+.seta-avancar {
+  position: absolute;
+  z-index: 1; /* position absolute e z-index 1 para que a seta sobresaia o elemento de classe slide e apareça na tela */
+  width: 4rem;
+}
+
+.seta-voltar {
+  transform: rotate(180deg);
   left: 5rem;
 }
 
-.seta-direita {
+.seta-avancar {
   right: 5rem;
 }
 
-.opacidade-seta {
+.opacidade {
   opacity: 0.6;
+  cursor: default; /* para a seta ficar sem clique */
 }
 
-.opacidade-zero {
-  opacity: 0;
-}
-
-.opacidade-um {
+.mostrar {
   opacity: 1;
 }
