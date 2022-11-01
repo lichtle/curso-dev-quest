@@ -85,16 +85,16 @@ body {
 .seta-avancar {
   position: absolute;
   z-index: 1; /* position absolute e z-index 1 para que a seta sobresaia o elemento de classe slide e apareça na tela */
-  width: 4rem;
+  width: 3rem;
 }
 
 .seta-voltar {
   transform: rotate(180deg);
-  left: 5rem;
+  left: 6rem;
 }
 
 .seta-avancar {
-  right: 5rem;
+  right: 6rem;
 }
 
 .opacidade {
