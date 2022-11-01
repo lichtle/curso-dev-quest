@@ -96,6 +96,10 @@ body {
   opacity: 0.6;
 }
 
-.opacidade-imagem {
+.opacidade-zero {
+  opacity: 0;
+}
+
+.opacidade-um {
   opacity: 1;
 }

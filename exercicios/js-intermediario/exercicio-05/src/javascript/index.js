@@ -8,11 +8,8 @@ const quartaImagem = document.getElementsByClassName("container-imagem-4");
 
 let imagens = [primeiraImagem, segundaImagem, terceiraImagem, quartaImagem];
 
-console.log(setaDireita[1]);
-
 setaDireita.forEach(function (setaAtual) {
-  setaAtual.addEventListener("click", function (imagemAtual) {
-    imagens[imagemAtual].classList.remove("opacidade-imagem");
-    imagens[imagemAtual++].classList.add("opacidade-imagem");
+  setaAtual.addEventListener("click", function () {
+    alert("Olá!");
   });
 });
