@@ -1,55 +1,86 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e5e5e5;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container-principal {
+  width: 65rem;
+  min-height: 34rem; /* Indica que o container deve ter uma altura mínima, mas não estabelece a altura máxima, podendo se adaptar aos diferentes tamanhos de pergunta e resposta*/
+  background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  border-radius: 3rem;
+  box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
 .container-principal .ilustracao {
   position: absolute;
-  left: -10rem;
+  left: -9rem;
 }
 
-.card {
-  height: 37rem;
-  width: 68rem;
-  background-color: #fff;
-  padding: 6rem 5rem 6rem 22rem;
-  border-radius: 2rem;
+.conteudo {
+  width: 90%;
+  padding-left: 22rem;
+  margin: 4rem 0;
 }
 
-.pergunta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
-  margin: 1.5rem 0;
-}
-
-.pergunta h1 {
+.conteudo h1 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.pergunta h2 {
+.conteudo .itens .item {
+  cursor: pointer;
+  border-bottom: 1px solid #d4d4d4;
+  background-image: url("../images/seta-fechada.png");
+  background-repeat: no-repeat;
+  background-position: top 0.7rem right 0;
+  margin: 1rem 0;
+}
+
+.conteudo .itens .item:last-child {
+  border-bottom: none;
+}
+
+.conteudo .itens .item .pergunta {
+  width: 90%;
+  transition: 0.4s ease;
   font-size: 1.7rem;
   font-weight: 500;
-}
-
-.resposta {
-  display: none;
-  font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
-.seta-fechada {
-  height: 0.8rem;
+.conteudo .itens .item .resposta {
+  display: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+@media (hover: hover) {
+  .item .pergunta:hover {
+    color: #f47c57;
+  }
+}
+
+/* ESTILO PARA QUANDO O ACORDEON ESTÁ ATIVO: */
+
+.conteudo .itens .item.ativo {
+  background-image: url("../images/seta-aberta.png");
+}
+
+.conteudo .itens .item.ativo .pergunta {
+  font-weight: 700;
+}
+
+.conteudo .itens .item.ativo .resposta {
+  display: block;
 }
