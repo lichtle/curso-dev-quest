@@ -29,6 +29,6 @@ console.log(pessoasMaioresDe20Anos);
 
 /* Caso a gente queira simplificar ainda mais, é possível transformar a função em uma arrow function:
 
-let pessoasMaioresDe20Anos = pessoas.filter((pessoa) => pessoa.idade > 20);
+let pessoasMaioresDe20Anos = pessoas.filter(pessoa => pessoa.idade > 20);
 
 */
