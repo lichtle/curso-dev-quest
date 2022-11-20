@@ -1,6 +1,8 @@
 const pessoas = ["Roberto", "Ricardo", "Raphael"];
 
-console.log(...pessoas); /* Retorna 3 itens separados. Dessa forma é possível, por exemplo, criar um novo array com esses itens + itens separados de outro array.
+console.log(
+  ...pessoas
+); /* Retorna 3 itens separados. Dessa forma é possível, por exemplo, criar um novo array com esses itens + itens separados de outro array.
 
 >>> Antigamente era utilizado o .concat: 
 
@@ -32,4 +34,3 @@ let cloneDoPersonagem = { ...personagem };
 
 console.log(personagem);
 console.log(cloneDoPersonagem);
-
