@@ -1,0 +1,15 @@
+{
+  "name": "usando-npm",
+  "version": "1.0.0",
+  "description": "Teste de npm do módulo de JavaScript Avançado do curso DevQuest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "npm"
+  ],
+  "author": "Leticia Fernandes",
+  "license": "ISC"
+}
