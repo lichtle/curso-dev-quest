@@ -16,7 +16,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 ### Módulo JavaScript Intermediário
 :panda_face: <a href="https://lichtle.github.io/quest-js-intermediario/" target="_blank">Formulário</a>
 
-## Veja meu progresso! :purple_heart: [■■■■■■□□□] 76%
+## Veja meu progresso! :purple_heart: [■■■■■■■□□] 80%
 
 - [X] Usando o Terminal
 - [X] Conhecendo o VS Code
