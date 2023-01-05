@@ -11,5 +11,8 @@
     "npm"
   ],
   "author": "Leticia Fernandes",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "kind-of": "^6.0.3"
+  }
 }
