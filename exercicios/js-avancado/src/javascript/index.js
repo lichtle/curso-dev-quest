@@ -2,7 +2,7 @@ let idDoConselho = document.getElementById("advice-id");
 let conselho = document.querySelector(".advice");
 let botao = document.querySelector(".btn-dice");
 
-botao.addEventListener("click", async function gerarConselho() {
+async function gerarConselho() {
   try {
     const solicitacao = await fetch("https://api.adviceslip.com/advice"); // Irá retornar uma promise
     const dadosRecebidos = await solicitacao.json();
@@ -16,6 +16,8 @@ botao.addEventListener("click", async function gerarConselho() {
   } catch (err) {
     console.log(`O seguinte erro ocorreu: ${err}`);
   }
-});
+}
 
-/* idDoConselho.innerText = slip.id */
+gerarConselho();
+
+botao.addEventListener("click", gerarConselho);
