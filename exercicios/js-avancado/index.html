@@ -8,12 +8,12 @@
       name="description"
       content="Segundo exercício obrigatório do módulo de CSS avançado pt. 2 (Display Flex) do curso DevQuest."
     />
-    <link rel="stylesheet" href="src/css/responsive.css" />
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link
       rel="shortcut icon"
-      href="src/images/favicon-32x32.png"
+      href="./src/images/favicon-32x32.png"
       type="image/x-icon"
     />
     <title>Gerador de Conselhos</title>
@@ -21,24 +21,25 @@
   <body>
     <div class="container">
       <main class="generator">
-        <h1 class="title">CONSELHO #<span id="advice-id">23</span></h1>
-        <p class="advice">
-          "O conselho mais clichê: nunca desista dos seus sonhos. Alguns dias
-          serão muito difíceis, as coisas darão errado, nos sentiremos
-          incapazes... e isso é normal. Os erros são parte crucial do processo.
-          Continue tentando de novo e de novo, uma hora dá certo!"
-        </p>
+        <h1 class="title" id="advice-id">
+          Clique no dado para obter um conselho
+        </h1>
+        <p class="advice"></p>
         <picture class="divider">
           <source
             media="(min-width: 687px)"
-            srcset="src/images/pattern-divider-desktop.svg"
+            srcset="./src/images/pattern-divider-desktop.svg"
             type="image/svg+xml"
           />
-          <img src="src/images/pattern-divider-mobile.svg" alt="Divisor" />
+          <img src="./src/images/pattern-divider-mobile.svg" alt="Divisor" />
         </picture>
       </main>
       <button class="btn-dice">
-        <img class="dice" src="src/images/icon-dice.svg" alt="Ícone do botão" />
+        <img
+          class="dice"
+          src="./src/images/icon-dice.svg"
+          alt="Ícone do botão"
+        />
       </button>
     </div>
 
