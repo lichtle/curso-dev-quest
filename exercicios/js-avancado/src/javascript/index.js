@@ -18,6 +18,6 @@ async function gerarConselho() {
   }
 }
 
-gerarConselho();
+gerarConselho(); // Chamando a função para que o conselho apareça logo de cara
 
-botao.addEventListener("click", gerarConselho);
+botao.addEventListener("click", gerarConselho); // Não pode colocar parênteses nessa função, caso contrário não funcionará. Mas se passarmos o mouse sobre gerarConselho, veremos que ele é uma função
