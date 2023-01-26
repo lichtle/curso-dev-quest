@@ -8,15 +8,17 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 
 ### Módulo CSS3 Avançado pt. 2 | Flex
 :raccoon: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Card de Perfil</a><br>
-:wolf: <a href="https://github.com/lichtle/projeto-card-de-perfil" target="_blank">Gerador de Conselhos</a>
 
 ### Módulo CSS3 Avançado pt. 3 | Grid
 :zebra: <a href="https://github.com/lichtle/projeto-landing-page-com-grid" target="_blank">Landing Page com Flex e Grid</a>
 
 ### Módulo JavaScript Intermediário
-:panda_face: <a href="https://lichtle.github.io/quest-js-intermediario/" target="_blank">Formulário</a>
+:panda_face: <a href="https://lichtle.github.io/quest-js-intermediario" target="_blank">Formulário</a>
 
-## Veja meu progresso! :purple_heart: [■■■■■■■□□] 80%
+### Módulo JavaScript Avançado
+:mouse: <a href="https://github.com/lichtle/curso-dev-quest/tree/main/exercicios/js-avancado" target="_blank">Gerador de Conselhos</a>
+
+## Veja meu progresso! :purple_heart: [■■■■■■■□□] 82%
 
 - [X] Usando o Terminal
 - [X] Conhecendo o VS Code
@@ -33,7 +35,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 - [X] CSS3 | Módulo de Reforço 
 - [X] JavaScript Básico
 - [X] JavaScript Intermediário
-- [ ] JavaScript Avançado
+- [X] JavaScript Avançado
 - [ ] Testes Automatizados de Software com Jest
 - [ ] Projeto Mundo Real com Fetch e GitHub
 - [ ] A Base do React
