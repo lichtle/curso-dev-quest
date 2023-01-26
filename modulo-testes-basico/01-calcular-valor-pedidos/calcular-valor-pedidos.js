@@ -1,3 +1,5 @@
+/* >>> Para obter apenas o valor total dos pedidos:
+
 const meuPedido = {
   itens: [
     { nome: "Fairy Rose", valor: 290 },
@@ -7,7 +9,7 @@ const meuPedido = {
   ],
 };
 
-/* const calcularValorPedido = (pedido) =>
+const calcularValorPedido = (pedido) =>
   pedido.itens.reduce(
     (valorTotal, valorAtual) => valorTotal + valorAtual.valor,
     0
@@ -22,15 +24,23 @@ const calcularValorPedido = (pedido) => {
     .filter((item) => !item.entrega) // Filtrando e pegando todos os itens que não sejam "entrega" do parâmetro (objeto) "pedido" (que nesse caso é a variável "meuPedido")
     .reduce((valorTotal, valorAtual) => valorTotal + valorAtual.valor, 0); // Após filtrar, obtemos a soma de todos os itens (tirando a entrega)
 
-  const entrega = pedido.itens.filter((item) => item.entrega); // Armazenando o item "Entrega" na variável "entrega". O filter retorna um array, por isso abaixo é necessário colocar a posição do item entrega, que será 0 pois só existirá um item no array.
+  const entrega = pedido.itens.filter(
+    (item) => item.entrega
+  ); /* Armazenando o item "Entrega" na variável "entrega". O filter retorna um array, por isso abaixo é necessário colocar a posição do item entrega, que será 0 pois só existirá um item no array.
 
-  // Agora é necessário criar uma condicional para avaliar a aplicação ou não aplicação do frete:
-
-  if (valorProdutos > 150) {
+  >>> Agora é necessário criar uma condicional para avaliar a aplicação ou não aplicação do frete:
+  
+  if (valorProdutos > 200) {
     return valorProdutos;
   } else {
     return valorProdutos + entrega[0].valor;
   }
+
+  >>> Podemos utilizar o operador ternário para tornar a condicional menos verbosa: */
+
+  return valorProdutos > 200 // Condição (o return deve ser usado aqui)
+    ? valorProdutos // Caso a condição seja verdadeira
+    : valorProdutos + entrega[0].valor; // Caso a condição seja falsa
 };
 
-console.log(calcularValorPedido(meuPedido));
+module.exports = calcularValorPedido;
