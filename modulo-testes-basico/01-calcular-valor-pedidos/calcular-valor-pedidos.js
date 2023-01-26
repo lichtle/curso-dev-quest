@@ -19,6 +19,8 @@ console.log(calcularValorPedido(meuPedido)); // Como parâmetro passamos de qual
 
 >>> Agora vamos supor que queremos adicionar frete na entrega, mas se o valor passar de 150, o frete é grátis: */
 
+const acrescimoValorEntrega = 0.2;
+
 const calcularValorPedido = (pedido) => {
   const valorProdutos = pedido.itens // Armazenando o valor dos produtos na variável valorProdutos
     .filter((item) => !item.entrega) // Filtrando e pegando todos os itens que não sejam "entrega" do parâmetro (objeto) "pedido" (que nesse caso é a variável "meuPedido")
@@ -26,9 +28,16 @@ const calcularValorPedido = (pedido) => {
 
   const entrega = pedido.itens.filter(
     (item) => item.entrega
-  ); /* Armazenando o item "Entrega" na variável "entrega". O filter retorna um array, por isso abaixo é necessário colocar a posição do item entrega, que será 0 pois só existirá um item no array.
+  ); /* Armazenando o item "Entrega" na variável "entrega". O filter retorna um array, por isso abaixo é necessário colocar a posição do item entrega, que será 0 pois só existirá um item no array
 
-  >>> Agora é necessário criar uma condicional para avaliar a aplicação ou não aplicação do frete:
+  >>> Criando uma condicional para verificar se o pedido é do Estado do RS. Caso seja, há uma taxa de +20% no frete: */
+
+  if (pedido.estado === "RS" || pedido.estado === "SC") {
+    const acrescimoEntrega = entrega[0].valor * acrescimoValorEntrega;
+    entrega[0].valor += acrescimoEntrega;
+  }
+
+  /* >>> Agora é necessário criar uma condicional para avaliar a aplicação ou não aplicação do frete:
   
   if (valorProdutos > 200) {
     return valorProdutos;
@@ -36,7 +45,7 @@ const calcularValorPedido = (pedido) => {
     return valorProdutos + entrega[0].valor;
   }
 
-  >>> Podemos utilizar o operador ternário para tornar a condicional menos verbosa: */
+  >>> Podemos utilizar o operador ternário para tornar a condicional acima menos verbosa: */
 
   return valorProdutos > 200 // Condição (o return deve ser usado aqui)
     ? valorProdutos // Caso a condição seja verdadeira
