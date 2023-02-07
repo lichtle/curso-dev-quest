@@ -18,7 +18,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 ### Módulo JavaScript Avançado
 :mouse: <a href="https://github.com/lichtle/curso-dev-quest/tree/main/exercicios/js-avancado" target="_blank">Gerador de Conselhos</a>
 <br>
-:koala: <a href="https://github.com/lichtle/projeto-fetch-github" target="_blank">Projeto GitHub API (busca de usuários)</a>
+:koala: <a href="https://github.com/lichtle/quest-js-avancado" target="_blank">Busca de Usuários do GitHub (GitHub API)</a>
 
 ## Veja meu progresso! :purple_heart: [■■■■■■■□□] 89%
 
