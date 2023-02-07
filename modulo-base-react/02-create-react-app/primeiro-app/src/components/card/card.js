@@ -32,7 +32,8 @@ class Card extends React.Component {
   render() {
     return (
       <div className="card">
-        {this.props.children}
+        <h3>{this.props.title}</h3>
+        <p>Este é o texto do card</p>
       </div>
     );
   }
