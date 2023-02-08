@@ -13,12 +13,14 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 :zebra: <a href="https://github.com/lichtle/projeto-landing-page-com-grid" target="_blank">Landing Page com Flex e Grid</a>
 
 ### Módulo JavaScript Intermediário
-:panda_face: <a href="https://lichtle.github.io/quest-js-intermediario" target="_blank">Formulário</a>
+:panda_face: <a href="https://lichtle.github.io/quest-js-intermediario" target="_blank">Formulário com validação</a>
 
 ### Módulo JavaScript Avançado
 :mouse: <a href="https://github.com/lichtle/curso-dev-quest/tree/main/exercicios/js-avancado" target="_blank">Gerador de Conselhos</a>
+<br>
+:koala: <a href="https://github.com/lichtle/quest-js-avancado" target="_blank">Busca de Usuários do GitHub (GitHub API)</a>
 
-## Veja meu progresso! :purple_heart: [■■■■■■■□□] 82%
+## Veja meu progresso! :purple_heart: [■■■■■■■□□] 89%
 
 - [X] Usando o Terminal
 - [X] Conhecendo o VS Code
@@ -36,8 +38,7 @@ Este repositório contém todos os exercícios e projetos feitos durante o curso
 - [X] JavaScript Básico
 - [X] JavaScript Intermediário
 - [X] JavaScript Avançado
-- [ ] Testes Automatizados de Software com Jest
-- [ ] Projeto Mundo Real com Fetch e GitHub
+- [X] Testes Automatizados de Software com Jest
 - [ ] A Base do React
 - [ ] React Avançado
 - [ ] Context API
