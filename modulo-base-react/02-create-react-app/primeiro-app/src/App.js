@@ -1,11 +1,11 @@
-import Button from "./components/button/button.js";
+// import Button from "./components/button/button.js";
+import Cards from "./components/cards/cards.js";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Button label="Baixar conteúdo" />
-      <Button />
+      <Cards />
     </>
   );
 }
