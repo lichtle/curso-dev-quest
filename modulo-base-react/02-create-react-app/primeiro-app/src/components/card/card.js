@@ -27,11 +27,20 @@ const Card = ({title}) => {
 
 */
 
-class Card extends React.Component {
-  // Este é um componente de CLASSE (e não de função). A palavra reservada "extends" significa que a classe Card está recebendo características do React. Pra que isso seja possível é necessário importar o React dentro do arquivo
-  render() {
-    return <div className="card">{this.props.children}</div>;
-  }
-}
+const Card = ({ children, color, sayCardColor }) => {
+  return (
+    <div
+      className="card"
+      style={{ backgroundColor: color }}
+      onClick={() => sayCardColor(color)} // É necessário colocar uma função anônima antes da função que queremos para não dispará-la assim que carregar a página
+    >
+      {children}
+    </div>
+  );
+};
+
+Card.defaultProps = {
+  color: "purple",
+};
 
 export default Card;
