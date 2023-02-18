@@ -15,6 +15,20 @@ async function fetchCards(deckId) {
   return await response.json();
 }
 
+const CardsList = (props) => {
+  return (
+    <ul>
+      {props.cards.map((card, indice) => {
+        return (
+          <li key={indice}>
+            <img src={card.image} alt={card.value} />
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
 const DeckOfCards = () => {
   const [deck, setDeck] = useState({ cards: [] });
 
@@ -32,48 +46,9 @@ const DeckOfCards = () => {
 
   return (
     <section>
-      <ul>
-        {deck.cards.map((card, indice) => {
-          return (
-            <li key={indice}>
-              <img src={card.image} alt={card.value} />
-            </li>
-          );
-        })}
-      </ul>
+      {deck.cards.length > 0 ? <CardsList cards={deck.cards}/> : "Nenhuma carta encontrada"}
     </section>
   );
 };
-
-// constructor() {
-//   super();
-//   this.state = { cards: [] }; // Criando um array de cartas vazio para ser posteriormente populado pelas funções de fetch
-// }
-
-// async componentDidMount() {
-//   // Chamando asa funções criadas acima. Como são funções assíncronas, é necessário utilizar o await para obter as respostas
-//   const deckId = await fetchDeck();
-//   const cards = await fetchCards(deckId);
-
-//   this.setState({
-//     cards: cards.cards, // Populando a chave cards criada anteriormente com o conteúdo da variável cards acima (que é um objeto cuja chave também nomeada cards corresponde às 52 cartas do deck)
-//   });
-// }
-
-// render() {
-//   return (
-//     <section>
-//       <ul>
-//         {this.state.cards.map((card, indice) => {
-//           return (
-//             <li key={indice}>
-//               <img src={card.image} alt={card.value} />
-//             </li>
-//           );
-//         })}
-//       </ul>
-//     </section>
-//   );
-// }
 
 export default DeckOfCards;
