@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Form from "../forms/form.js";
 
 async function fetchDeck() {
   const response = await fetch(
@@ -10,7 +11,7 @@ async function fetchDeck() {
 
 async function fetchCards(deckId) {
   const response = await fetch(
-    `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=52`
+    `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`
   ); // Fetch do baralho de cartas acima, em que "count" corresponde ao número de cartas que queremos pegar (sendo o máximo 52)
   return await response.json();
 }
@@ -30,7 +31,7 @@ const CardsList = (props) => {
 };
 
 const DeckOfCards = () => {
-  const [deck, setDeck] = useState({ cards: [] });
+  const [deck, setDeck] = useState({ cards: [] }); // Lembrando que essa sintaxe corresponde à desestruturação de um array. O retorno da função é um par de valores: o estado inicial e uma função que o atualiza
 
   useEffect(() => {
     // O use effect espera como retorno nada OU uma função de limpeza, e não uma promise. Por isso é necessário criar, no bloco de execução do useEffect, uma função assíncrona para que o await seja utilizado. Neste exemplo quem faz esse papel é a função fetchData, que é chamada em seguida:
@@ -44,9 +45,18 @@ const DeckOfCards = () => {
     fetchData();
   }, []); // Necessário passar um array vazio (dependência) como segundo parâmetro do useEffect para que a página não fique atualizando infinitamente. Funciona como um componentDidMount(), que também só roda uma vez.
 
+  async function addCard(newCard) {
+    setDeck({ cards: [...deck.cards, newCard] });
+  }
+
   return (
     <section>
-      {deck.cards.length > 0 ? <CardsList cards={deck.cards}/> : "Nenhuma carta encontrada"}
+      <Form addCard={addCard} />
+      {deck.cards.length > 0 ? (
+        <CardsList cards={deck.cards} />
+      ) : (
+        "Nenhuma carta encontrada"
+      )}
     </section>
   );
 };
