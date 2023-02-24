@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Form from "../forms/form.js";
+import Form from "../Form/index.js";
 
 async function fetchDeck() {
   const response = await fetch(
@@ -23,6 +23,9 @@ const CardsList = (props) => {
         return (
           <li key={indice}>
             <img src={card.image} alt={card.value} />
+            <p>
+              {card.value} {card.suit}
+            </p>
           </li>
         );
       })}

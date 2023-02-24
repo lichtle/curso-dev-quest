@@ -1,5 +1,5 @@
 import "./App.css";
-import DeckOfCards from "./components/deck-of-cards/deck-of-cards";
+import DeckOfCards from "./components/DeckOfCards";
 
 function App() {
   return (
